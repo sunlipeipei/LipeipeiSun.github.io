@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Personal website
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lipeipei Sun</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Title -->
+  <section id="title" class="gradient-background">
+    <header class="p-3">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-dark">Home </a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Code</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Design</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+  </section>
+
+  <section id="feature" class="py-5" >
+    <div class="px-4 pt-5 mb-5 text-center">
+      <!-- <img src="./Images/20-0720_圈圈_圆圆.png" alt="background image" height="500"> -->
+        <h1 class="display-4 text-body-emphasis">Building Facade & Optimization</h1>
+        
+        <!-- <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Images/" class="d-block w-100" alt="couple">
+                </div>
+                <div class="carousel-item">
+                  <img src="./dog.jpg" class="d-block w-100" alt="dog">
+                </div>
+                <div class="carousel-item">
+                  <img src="./family.jpg" class="d-block w-100" alt="family">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div> -->
+        
+        
+        <img class="d-block mx-auto mb-4 mt-5" src="./Images/02_Pattern Studies feature image.png" alt="profile image" height="">
+        <div class="col-lg-6 mx-auto">
+            <p class="mb-4 text-start">View presentation video <a href="https://northeastern-my.sharepoint.com/:v:/r/personal/sun_lipe_northeastern_edu/Documents/CS%205002%20Discrete%20Structure/Final%20Project/5002%20-%20Diecrete%20Structure%20-%20Final%20Presentation%20-%20with%20all%20videos.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jT5bx9">here.</a></p>
+            <p class="mb-4 text-start">View presentation slides <a href="https://northeastern-my.sharepoint.com/:b:/r/personal/sun_lipe_northeastern_edu/Documents/CS%205002%20Discrete%20Structure/Final%20Project/CS5002_Final_Project_Report_Lipeipei%20Sun/CS5002_Final_Project_Report_Lipeipei%20Sun_Appendix%20A.pdf?csf=1&web=1&e=lZyoTh">here.</a></p>
+            <p class="mb-4 text-start">View source code <a href="https://github.com/sunlipeipei/Building-Facade-Layouts-and-Optimization">here.</a></p>
+            <h3 class="mb-4 text-start">The Question and Objective</h3>
+                <p class="mb-4 text-start">This project's objective is to analyze and optimize the layout of wall panels and windows on a building facade,
+                incorporating both performance requirements and aesthetic preferences. The project will employ discrete mathematics,
+                with a focus on combinatorics and probability, to systematically explore layout options. The guiding question of this
+                project is:</p>
+                <p class="mb-4 text-start">"What are the optimized building façade layout options based on the building information provided below?"
+                <h4 class="mb-4 text-start">Basic Building Façade Requirements:</h4>
+                <ul class="mb-4 text-start">
+                    <li>Building Facade Dimensions:</li>
+                        <ul class="mb-4 text-start">
+                            <li>Width: 140 feet (42 vertical bays)</li>
+                            <li>Height: 54 feet</li>
+                        </ul>
+                    <li>Building Stories:</li>
+                        <ul class="mb-4 text-start">
+                            <li>Story height: 15 feet at Level 1, 18 feet at Level 2 and 3, and 3 feet at the parapet</li>
+                            <li>Total stories: 3</li>
+                        </ul>
+                    <li>Panel Sizes:</li>
+                        <ul class="mb-4 text-start">
+                            <li>Heights: 3, 6, or 9 feet</li>
+                            <li>Width: 40 inches (10/3 feet)</li>
+                        </ul>
+                    <li>Window Specifications:</li>
+                        <ul class="mb-4 text-start">
+                            <li>Height: 12 feet at level 1 and 15 feet at level 2 and 3.</li>
+                            <li>Located at floor level with elevations at 0, 18, and 36 feet.<br />
+                            Performance requirements:</li>
+                        </ul>
+                </ul>
+                <h4 class="mb-4 text-start">Performance requirements:</h4>
+                    <ul class="mb-4 text-start">
+                        <li>The total glazing (window area) should be between 35% to 40% of the total facade area for each level.</li>
+                        <li>Windows to be evenly distributed.</li>
+                    </ul>
+            
+                <h4 class="mb-4 text-start">Aesthetic Preferences:</h4>
+                    <ul class="mb-4 text-start">
+                        <li>Preference for 6 feet and 9 feet panels. The 3 feet panel should be used only between two windows.</li>
+                        <li>No more than two windows should be adjacent to each other to maintain the building's aesthetic integrity.</li>
+                    </ul>
+                </p>
+            
+                <h3 class="mb-4 text-start">Analysis</h3>
+                
+                <p class="mb-4 text-start">The scope of this project involves two main stages: analyzing combinations per vertical bay and then applying these
+                findings to the entire wall area.</p>
+                <h4 class="mb-4 text-start">Step 1. Total Combination for Vertical Bay</h4>
+                <p class="mb-4 text-start">The initial step involved calculating the number of wall panel layout combinations available per vertical bay,
+                considering panel heights of 3, 6, and 9 feet, along with 12- and 15-foot windows.
+                Based on the 3, 6, 9 feet solid panels, 12- and 15-feet windows, and a 54 feet total building height, 141 combinations
+                were identified. This calculation uses Module 5 Combination knowledge from discrete math class. See image below for the
+                representation of the 141 options.</p>
+                <a href="#" class="image fit"><img src="images/02_Panel Layout/Picture02.png" alt="Matplotlib graph showing building façade panel layout" /></a>
+                <p class="mb-4 text-start">Image: Matplotlib graph showing building façade panel layout – vertical bay options</p>
+            
+                <p class="mb-4 text-start">Upon determining the total combinations, the next step was to refine these options. Although there were 141 options for
+                vertical bays, many did not align with aesthetic preferences favoring 6-foot and 9-foot panels with a maximum of two 3’
+                panels between windows. Additionally, options with more than 3 windows in a vertical bay exceeded the maximum allowable
+                windows (one 12’ window at Level 1 and one 15’ window at Levels 2 and 3). Consequently, options not meeting these
+                criteria were eliminated.</p>
+                <p class="mb-4 text-start">After this elimination, there were 15 valid options. The next stage involved arranging each vertical bay layout using
+                Module 5 permutation knowledge. This involved looping through each vertical bay and performing permutation calculations
+                to generate different arrangements based on the basic panel and window options. During this process, we ensured that the
+                window heights were shown at the correct elevations of 0, 15, and 33 feet and filtered out the invalid options.</p>
+                <p class="mb-4 text-start">As a result, from the 15 combination options, 113 valid options were generated for the vertical bays.</p>
+                <a href="#" class="image fit"><img src="images/02_Panel Layout/Picture03.png" alt="" /></a>
+                <p class="mb-4 text-start">Image: Matplotlib graph showing the 15 combination and 113 vertical bay options</p>
+                
+                <h4 class="mb-4 text-start">Step 2. Combination at Full Building Extent</h4>
+                <p class="mb-4 text-start">Now with the valid vertical bay options, I worked on combining the vertical bays to create the full building layouts.
+                The evaluation of these layouts was guided by performance requirements, particularly the window-to-wall ratio. If this
+                ratio falls outside the 35%-40% range, those options were disregarded. Additionally, to ensure well-lit spaces, we aimed
+                for an even distribution of windows at every level. For aesthetic integrity, layouts with more than two adjacent windows
+                were excluded.</p>
+                <p class="mb-4 text-start">However, as I started my analysis, I realized that arranging 113 vertical bay options into a 42-bay building facade is a
+                very complex task, especially if we are considering all possible combinations. The permutations for this scenario were
+                extraordinarily high (113^42 if each bay can be used more than once, or 113! / (113-42)! if each bay can be used only
+                once). It seemed infeasible to generate and evaluate all permutations.</p>
+                <p class="mb-4 text-start">After knowing that generating all the options was not practical, to move forward with the analysis, instead of providing
+                all the possible combinations, I used a few methods to provide directions for further analysis.</p>
+                
+                <h5 class="mb-4 text-start">Method 1 – Simplifying the Combination Analysis & Finding Patterns</h5>
+                <p class="mb-4 text-start">For this method, I started by reviewing the glazing requirements and identifying how many windows were required at each
+                level. To simplify the analysis, I chose to start with the highest window quality for each level, which would provide
+                the best daylight for the interior space.</p>
+                <p class="mb-4 text-start">First, the 113 valid options were divided into two categories, one with windows and one without. Then the options with
+                windows were further broken down into seven categories:</p>
+                <a href="#" class="image fit"><img src="images/02_Panel Layout/Picture04.png" alt="" /></a>
+                <p class="mb-4 text-start">Image: categories of vertical bays with windows</p>
+                <p class="mb-4 text-start">Based on the requirements that windows should be evenly distributed and the window quantity required, the options were
+                studied.</p>
+                <p class="mb-4 text-start">Option A involved alternating bays with 3 windows at each level and bays with all solid panels. This option would allow
+                for even distribution of windows. Since level 1 requires 21 windows and level 2 and 3 only require 20 windows, an option
+                with a window at Level 1 was also included.</p>
+                <p class="mb-4 text-start">Image: Matplotlib graph showing samples from Option A</p>
+                <p class="mb-4 text-start">Option B incorporated three types of window bays for window placement across levels. The three types of window bays
+                include bays with windows at Level 2 only, bays with windows at Level 1 and 3, as well as bays with windows at Level 1
+                only. This option provided layouts with a slightly different pattern where we have alternating windows that do not
+                always land at the same location on each level. See image on the following page for a few sample outcomes.</p>
+                <a href="#" class="image fit"><img src="images/02_Panel Layout/Picture05.png" alt="" /></a>
+                <p class="mb-4 text-start">Image: Matplotlib graph showing samples from Option B</p>
+                <p class="mb-4 text-start">Option C, aimed for layout variation using all window bay types, arranged to ensure even distribution and adherence to
+                the two-window adjacency rule. See image below for a few sample outcomes.</p>
+                <a href="#" class="image fit"><img src="immages/02_Panel Layout/Picture06.png" alt="" /></a>
+                <p class="mb-4 text-start">Image: Matplotlib graph showing samples from Option C</p>
+                <p class="mb-4 text-start">Through the process, a few different patterns were introduced based on the known requirements. Though these options did
+                not cover all the possible scenarios, they provided architect designers and clients with a few different directions as a
+                starting point. Based on feedback and preferences, variations within options could be furthered analyzed and studied.
+                </p>
+                <h5 class="mb-4 text-start">Method 2 – Incremental Analysis</h5></p>
+                <p class="mb-4 text-start">The second method involved breaking the façade into smaller, more manageable modules for analysis and then build up the
+                full façade. With 42 bays, we could break it down into a few options: two 21-bay modules, three 14-bay modules, six
+                7-bay modules, seven 6-bay modules, fourteen 3-bay modules and twenty-one 2-bay modules. In this scenario, instead of
+                creating combinations for 42 bays, we started with a smaller module that is more manageable. The following analysis was
+                based on the 2-bay module. To standardize the module type, 20 windows at each level were chosen for the study.</p>
+                <p class="mb-4 text-start">Option D utilized a solid bay and a window bay with windows on all three levels as the 2-bay module. To compose 42 bays,
+                we would have twenty 2-bay modules that provide 20 windows on each level, then two of the solid panel bays. This
+                approach resulted in a very standard and repetitive layout. See image below for a few samples.</p>
+                
+                <p class="mb-4 text-start">Image: Matplotlib graph showing samples from Option D</p>
+                <p class="mb-4 text-start">Option E introduced variations in the 2-bay module, contributing to more interesting layouts.</p>
+                <p class="mb-4 text-start">If the goal is to have one window on each level in the 2-bay module, there were a few more options:<br/>
+                <ol class="mb-4 text-start">
+                    <li>bay with window on level 1, 2, 3 and bay with all solid panels</li>
+                    <li>bay with window on level 1 + bay with window on level 2 & 3</li>
+                    <li>bay with window on level 2 + bay with window on level 1 & 3</li>
+                    <li>bay with window on level 3 + bay with window on level 1 & 2</li>
+                </ol>
+                </p>
+                <p class="mb-4 text-start">Instead of using the same 2-bay module, we could add some variations by mixing four different 2-bay models. See image
+                below for some samples from Option E. It uses the same pattern and logic as Option D but by providing variations for the
+                2-bay module, the layouts were more dynamic and less rigorous.</p>
+                <a href="#" class="image fit"><img src="images/02_Panel Layout/Picture07.png" alt="" /></a>
+                <p class="mb-4 text-start">Image: Matplotlib graph showing samples from Option E</p>
+                <p class="mb-4 text-start">Due to the time limitation of this project, studies of other multi-bay modules were not performed. If this approach
+                seemed to be appropriate, analyzing and studying other multi-bay modules would be a good next step for continued
+                analysis.</p>
+                
+                <h3 class="mb-4 text-start">Conclusion</h3>
+                <p class="mb-4 text-start">The objective of this project is to determine optimized building façade layout options, incorporating performance
+                requirements and aesthetic preferences. Through the analysis and the application of discrete mathematics, specifically
+                combinations and probabilities, several valid layout options were explored and identified.</p>
+                <h4 class="mb-4 text-start">Weakness, Limitations, Future Exploration</h4>
+                <p class="mb-4 text-start">One of the major limitations encountered in this project was the computational feasibility of evaluating all possible
+                combinations of façade layouts. Transitioning from 113 valid vertical options to a 42-bay façade layout, the sheer
+                volume of permutations made it impractical to evaluate every option. In addition, the methods utilized provided valid
+                directions but due to time constraint they do not cover all possible options. It requires further analysis, exploration
+                and evaluation based on designers’ and clients’ preferences.</p>
+                <p class="mb-4 text-start">In addition, I began this project by dividing the building façade into vertical bays. However, another approach worth
+                exploring would be to start the analysis by determining the window locations based on the requirements and then
+                assigning different panels to the solid portions of the wall. This method could offer a different perspective and
+                potentially yield alternative optimal solutions.</p>
+                <p class="mb-4 text-start">In the future, I would like to learn more about computational methods or algorithms that can more efficiently generate,
+                evaluate, and optimize large-scale options. Delving deeper into the realms of computational optimization methods and
+                algorithms could potentially offer alternative perspectives and solutions to these complex problems. Additionally, the
+                potential application of AI and machine learning could provide more innovative approaches to architectural design
+                problems.</p>
+               
+            </p>
+        </div>
+      </div>
+  </section>
+
+  <section id="prjects">
+    
+    <div class="container marketing">
+    
+    
+        <!-- START THE FEATURETTES -->
+
+    
+    
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+  </section>
+
+  <section class="gradient-background">
+    <div class="container ">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© Lipeipei Sun</span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/sunlipeipei"><img src="./Images/Logos/Github-Logos/github-mark.png" alt="Github logo" class="bi" width="24" height="24"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="www.linkedin.com/in/lipeipei-peipei-sun-84661642"><img src="Images/Logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn logo" class="bi" width="24" height="24"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+    </div>
+  </section>
+</body>
