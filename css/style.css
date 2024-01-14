@@ -7,6 +7,11 @@
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
     }
+.responsive-clickable-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
 /* .gradient-background {
 background: rgb(222, 222, 222);
 background-size: 180% 180%;
