@@ -22,6 +22,17 @@ body {
   width: auto; 
 }
 
+.icon {
+  max-height: 30px;
+  margin-right: 15px;
+}
+
+.logo {
+  transition: transform 0.75s ease;
+  display: block;
+  margin: 0 auto; /* Centers horizontally */
+}
+
 /* .gradient-background {
 background: rgb(222, 222, 222);
 background-size: 180% 180%;
