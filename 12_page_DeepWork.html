@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	Personal website - DeepWork: AI Full-Stack Engineering Pipeline
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lipeipei Sun - DeepWork</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Title -->
+  <section id="title" class="gradient-background">
+    <header class="p-3">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="./index.html" class="nav-link px-2 link-dark">Home </a></li>
+              <li><a href="./01_page_resume.html" class="nav-link px-2 link-dark">About Me </a></li>
+              <li><a href="./index_code.html" class="nav-link px-2 link-dark fw-bold">Code</a></li>
+              <li><a href="./index_design.html" class="nav-link px-2 link-dark">Design</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+  </section>
+
+  <section id="feature" class="py-5" >
+    <div class="px-4 pt-5 mb-5 text-center">
+        <h1 class="display-4 text-body-emphasis">Building DeepWork: How We Used AI as a Full-Stack Engineering Pipeline</h1>
+        <p class="lead mb-4">By Qi (Dako) Wei & Lipeipei Sun | March 2026</p>
+        <img class="col-lg-6 mx-auto container rounded shadow-lg mb-5" src="./Images/12_DeepWork.png" alt="DeepWork UI Concept">
+        
+        <div class="col-lg-8 mx-auto container">
+          <div class="mb-4 mx-auto text-start container">
+            <div class="d-flex gap-3 justify-content-center mb-5">
+              <a href="https://deepwork-two.vercel.app/">
+                <button type="button" class="btn btn-outline-dark btn-sm px-4">🔗 Live App</button>
+              </a>
+              <a href="https://github.com/sunlipeipei/cs7180-project2">
+                <button type="button" class="btn btn-outline-dark btn-sm px-4">GitHub Repository</button>
+              </a>
+            </div>
+
+            <h4 class="mb-4 text-start">1. Introduction</h4>
+            <p class="mb-5 text-start">
+              Most developers use AI to write code faster. We used it differently — as a structured engineering pipeline where every stage had a defined input, a defined output, and a defined AI tool responsible for bridging the two.
+            </p>
+            <p class="mb-5 text-start">
+              DeepWork is a full-stack Pomodoro focus timer built for users who reject rigid session transitions. When a focus session ends, the app sends a gentle notification — it never forces a break. Sessions are logged automatically, tagged by project, and surfaced in an analytics dashboard so users can actually understand their own productivity patterns. The stack is Next.js 16 with App Router, MongoDB Atlas, JWT authentication via HTTP-only cookies, and Tailwind CSS, deployed on Vercel. We built it in two one-week sprints, as a two-person team, with 80%+ test coverage enforced from day one.
+            </p>
+
+            <h4 class="mb-4 text-start">2. Using Artifacts to Rapidly Design and Iterate</h4>
+            <p class="mb-4 text-start fw-bold">The core claim: Claude Web artifacts let us validate the full UI before writing a single backend route — and kept evolving as a living design document throughout both sprints, not a one-time throwaway deliverable.</p>
+            
+            <h5 class="mt-4">Before Code: From User Stories to a Working Prototype</h5>
+            <p class="mb-4 text-start">
+              Every feature in DeepWork traces back to a behavioral interview. We conducted three Mom Test interviews in February 2026. We fed the raw interview notes into Claude and asked it to identify recurring pain points, extract validated personas, and translate them into structured user stories with acceptance criteria. The output directly shaped our PRD. For example, all three interviewees described dismissing timer alerts mid-thought — not occasionally, but consistently. Claude helped us articulate this as an engineering requirement rather than a UX preference: <em>"As a remote worker, I want to be notified when a session ends without being forced into a break, so I can finish my current thought before switching."</em>
+            </p>
+            <p class="mb-4 text-start">
+              With user stories in hand, we used Claude's artifact feature to generate a working React prototype — a fully rendered, interactive UI — before touching the backend. Decisions that would have been expensive to reverse later — like how the accumulated focus bar relates to the per-session timer, or where the tag input lives in the session flow — were settled visually in minutes.
+            </p>
+
+            <h5>During Implementation: The Prototype as a Living Document</h5>
+            <p class="mb-4 text-start">
+              Midway through Sprint 1, as we built the actual features, we hit usability issues that the prototype had not revealed. Rather than treating the prototype as a finished artifact, we went back to Claude Web, described what we had learned, and updated it. We treated it as a checkpoint. Every time real development surfaced a design assumption worth revisiting, the prototype was updated to reflect the new understanding.
+            </p>
+
+            <h4 class="mb-4 text-start">3. Delivering High-Quality Code with Agentic AI</h4>
+            <p class="mb-4 text-start fw-bold">The core claim: agentic AI produces high-quality code only when the process constrains it. Our two-chat TDD workflow and CI/CD pipeline made quality a mechanical guarantee, not a judgment call.</p>
+
+            <h5>The Two-Chat TDD Workflow</h5>
+            <p class="mb-4 text-start">
+              We enforced a strict two-phase TDD cycle that treated AI the same way you treat any developer on a team:
+            </p>
+            <p class="mb-4 text-start">
+              <strong>Phase 1 — Write Tests (Red State).</strong> A Claude Code session read the user story and wrote failing integration tests. No implementation code. At the end of Phase 1, every new test had to fail.
+            </p>
+            <p class="mb-4 text-start">
+              <strong>Phase 2 — Implement to Pass (Green State).</strong> A separate Claude Code session then implemented the minimum code required to make those tests pass. Critically, test files were locked by a pre-commit hook — <code>guard-test-files.sh</code> — during this phase. If a test failed, the instruction was unambiguous: fix the implementation, never the test.
+            </p>
+
+            <h4 class="mb-4 text-start">4. What We Learned</h4>
+            <p class="mb-4 text-start">
+              <strong>First: constrained roles consistently outperform open-ended prompts.</strong> Every tool had a job. The quality of the output was directly proportional to the specificity of the constraint.
+            </p>
+            <p class="mb-4 text-start">
+              <strong>Second: documentation is the real force multiplier.</strong> We maintained a <code>CLAUDE.md</code> file — a project-level instruction document that told Claude Code the architecture patterns, naming conventions, and testing philosophy.
+            </p>
+            <p class="mb-4 text-start">
+              <strong>Third: the pipeline itself is the repeatable asset.</strong> AI-assisted engineering is not faster because AI writes more code. It is faster because it compresses the feedback loops between design, implementation, and validation.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="projects">
+    <div class="container marketing">
+        <!-- /END THE FEATURETTES -->
+      </div>
+  </section>
+
+</body>
+
+<!-- /FOOTER -->
+<section class="gradient-background">
+  <div class="container ">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 mt-4 border-top fixed-bottom gradient-background">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© Lipeipei Sun</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/sunlipeipei"><img src="./Images/Logos/Github-Logos/github-mark.png" alt="Github logo" class="bi" width="24" height="24"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/lipeipei-peipei-sun-84661642/"><img src="Images/Logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn logo" class="bi" width="24" height="24"></a></li>
+        </ul>
+      </footer>
+  </div>
+</section>
+</body>
+</html>
