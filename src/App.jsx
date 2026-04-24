@@ -18,7 +18,7 @@ import Photography from './pages/projects/Photography';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="d-flex flex-column min-vh-100 position-relative">
         <Header />
         <div className="flex-grow-1">

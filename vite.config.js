@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.GITHUB_ACTIONS ? '/LipeipeiSun.github.io/' : '/',
   optimizeDeps: {
-    // Only scan the main index.html for dependencies, and explicitly ignore checking legacy html files in public/
     entries: ['index.html']
   }
 });
