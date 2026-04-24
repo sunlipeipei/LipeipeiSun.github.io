@@ -49,11 +49,12 @@ function Design() {
             primaryLink="/projects/photography"
           />
 
-          <ProjectCard 
+          <ProjectCard
             title="doodles"
             category="Illustration"
             description="Delve into the whimsical world of multi-media creations, where each piece blends traditional techniques with digital innovation. This collection embodies the joy of exploration, showcasing a vibrant tapestry of ideas that dance across the canvas in a celebration of color, texture, and imagination."
             imageUrl="/Images/09_Doodles.JPG"
+            primaryLink="/projects/doodles"
             reverse={true}
           />
 

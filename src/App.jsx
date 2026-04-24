@@ -15,6 +15,7 @@ import LivingUponHistory from './pages/projects/LivingUponHistory';
 import NeverGoneNeverHome from './pages/projects/NeverGoneNeverHome';
 import UofADistrict from './pages/projects/UofADistrict';
 import Photography from './pages/projects/Photography';
+import Doodles from './pages/projects/Doodles';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/projects/never-gone-never-home" element={<NeverGoneNeverHome />} />
             <Route path="/projects/uofa-district" element={<UofADistrict />} />
             <Route path="/projects/photography" element={<Photography />} />
+            <Route path="/projects/doodles" element={<Doodles />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
