@@ -1,4 +1,5 @@
 import React from 'react';
+import { imgUrl } from '../../utils/assetUrl';
 
 export default function DeepWork() {
   return (
@@ -14,7 +15,7 @@ export default function DeepWork() {
           </div>
 
           <img
-            src="/Images/12_DeepWork.png"
+            src={imgUrl('/Images/12_DeepWork.png')}
             className="img-fluid rounded shadow-sm d-block mx-auto mb-4"
             alt="DeepWork UI"
             style={{ maxWidth: '600px', borderRadius: '16px' }}

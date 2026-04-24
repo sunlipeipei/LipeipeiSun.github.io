@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { imgUrl } from '../utils/assetUrl';
 
 function ProjectCard({ title, category, description, imageUrl, videoUrl, primaryLink, primaryLinkText, secondaryLink, secondaryLinkText, reverse }) {
   const contentOrder = reverse ? "order-md-2" : "";
@@ -41,11 +42,11 @@ function ProjectCard({ title, category, description, imageUrl, videoUrl, primary
       <div className={`col-md-5 ${mediaOrder} d-flex align-items-center`}>
         {videoUrl ? (
           <video className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow-sm" width="500" height="500" autoPlay loop muted playsInline>
-            <source src={videoUrl} type="video/mp4" />
+            <source src={imgUrl(videoUrl)} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         ) : (
-          <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow-sm" src={imageUrl} width="500" alt={`${title} preview`} />
+          <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow-sm" src={imgUrl(imageUrl)} width="500" alt={`${title} preview`} />
         )}
       </div>
     </div>

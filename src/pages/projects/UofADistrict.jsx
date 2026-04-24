@@ -1,10 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { imgUrl } from '../../utils/assetUrl';
 
 export default function UofADistrict() {
   const slides = Array.from({ length: 15 }, (_, i) => {
     const num = String(i + 2).padStart(2, '0');
-    return `/Images/07_UofA/${num}.jpeg`;
+    return imgUrl(`/Images/07_UofA/${num}.jpeg`);
   });
 
   return (

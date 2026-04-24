@@ -1,4 +1,5 @@
 import React from 'react';
+import { imgUrl } from '../../utils/assetUrl';
 
 export default function LlmPersona() {
   return (
@@ -13,7 +14,7 @@ export default function LlmPersona() {
           </div>
 
           <img
-            src="/Images/10_InteractivePersona.webp"
+            src={imgUrl('/Images/10_InteractivePersona.webp')}
             className="img-fluid d-block mx-auto mb-4"
             alt="Interactive LLM-Persona"
             style={{ maxWidth: '600px', borderRadius: '16px' }}

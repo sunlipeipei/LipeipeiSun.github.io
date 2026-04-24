@@ -1,10 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { imgUrl } from '../../utils/assetUrl';
 
 export default function LivingUponHistory() {
   const slides = Array.from({ length: 13 }, (_, i) => {
     const num = String(i + 1).padStart(2, '0');
-    return `/Images/05_LUH/${num}.jpeg`;
+    return imgUrl(`/Images/05_LUH/${num}.jpeg`);
   });
 
   return (

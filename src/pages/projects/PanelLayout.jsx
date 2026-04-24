@@ -1,4 +1,5 @@
 import React from 'react';
+import { imgUrl } from '../../utils/assetUrl';
 
 export default function PanelLayout() {
   return (
@@ -13,7 +14,7 @@ export default function PanelLayout() {
           </div>
 
           <img
-            src="/Images/02_Panel Layout/Picture01.jpg"
+            src={imgUrl('/Images/02_Panel Layout/Picture01.jpg')}
             className="img-fluid d-block mx-auto mb-4"
             alt="Building facade feature"
             style={{ maxWidth: '700px', borderRadius: '16px' }}
@@ -104,7 +105,7 @@ export default function PanelLayout() {
             <p className="mb-4">
               The initial step involved calculating the number of wall panel layout combinations available per vertical bay, considering panel heights of 3, 6, and 9 feet, along with 12- and 15-foot windows. Based on the 3, 6, 9 feet solid panels, 12- and 15-feet windows, and a 54 feet total building height, 141 combinations were identified. This calculation uses Module 5 Combination knowledge from discrete math class.
             </p>
-            <img src="/Images/02_Panel Layout/Picture02.png" alt="Matplotlib graph showing building façade panel layout" className="project-content-img" />
+            <img src={imgUrl('/Images/02_Panel Layout/Picture02.png')} alt="Matplotlib graph showing building façade panel layout" className="project-content-img" />
             <p className="mb-4 text-muted fst-italic text-center">Matplotlib graph showing building façade panel layout – vertical bay options</p>
 
             <p className="mb-4">
@@ -114,7 +115,7 @@ export default function PanelLayout() {
               After this elimination, there were 15 valid options. The next stage involved arranging each vertical bay layout using Module 5 permutation knowledge. This involved looping through each vertical bay and performing permutation calculations to generate different arrangements. During this process, we ensured that the window heights were shown at the correct elevations of 0, 15, and 33 feet and filtered out invalid options.
             </p>
             <p className="mb-4">As a result, from the 15 combination options, 113 valid options were generated for the vertical bays.</p>
-            <img src="/Images/02_Panel Layout/Picture03.png" alt="Matplotlib graph showing the 15 combination and 113 vertical bay options" className="project-content-img" />
+            <img src={imgUrl('/Images/02_Panel Layout/Picture03.png')} alt="Matplotlib graph showing the 15 combination and 113 vertical bay options" className="project-content-img" />
             <p className="mb-5 text-muted fst-italic text-center">Matplotlib graph showing the 15 combination and 113 vertical bay options</p>
 
             <h4 className="mb-3">Step 2. Combination at Full Building Extent</h4>
@@ -135,15 +136,15 @@ export default function PanelLayout() {
             <p className="mb-4">
               First, the 113 valid options were divided into two categories, one with windows and one without. Then the options with windows were further broken down into seven categories:
             </p>
-            <img src="/Images/02_Panel Layout/Picture04.png" alt="Categories of vertical bays with windows" className="project-content-img" />
+            <img src={imgUrl('/Images/02_Panel Layout/Picture04.png')} alt="Categories of vertical bays with windows" className="project-content-img" />
             <p className="mb-4 text-muted fst-italic text-center">Categories of vertical bays with windows</p>
 
             <p className="mb-4">
               Option A involved alternating bays with 3 windows at each level and bays with all solid panels. Option B incorporated three types of window bays for window placement across levels. Option C aimed for layout variation using all window bay types.
             </p>
-            <img src="/Images/02_Panel Layout/Picture05.png" alt="Matplotlib graph showing samples from Option B" className="project-content-img" />
+            <img src={imgUrl('/Images/02_Panel Layout/Picture05.png')} alt="Matplotlib graph showing samples from Option B" className="project-content-img" />
             <p className="mb-4 text-muted fst-italic text-center">Matplotlib graph showing samples from Option B</p>
-            <img src="/Images/02_Panel Layout/Picture06.png" alt="Matplotlib graph showing samples from Option C" className="project-content-img" />
+            <img src={imgUrl('/Images/02_Panel Layout/Picture06.png')} alt="Matplotlib graph showing samples from Option C" className="project-content-img" />
             <p className="mb-5 text-muted fst-italic text-center">Matplotlib graph showing samples from Option C</p>
 
             <h5 className="mb-3">Method 2 – Incremental Analysis</h5>
@@ -153,7 +154,7 @@ export default function PanelLayout() {
             <p className="mb-4">
               Option E introduced variations in the 2-bay module, contributing to more interesting layouts. Instead of using the same 2-bay module, we could add some variations by mixing four different 2-bay models. See image below for some samples from Option E.
             </p>
-            <img src="/Images/02_Panel Layout/Picture07.png" alt="Matplotlib graph showing samples from Option E" className="project-content-img" />
+            <img src={imgUrl('/Images/02_Panel Layout/Picture07.png')} alt="Matplotlib graph showing samples from Option E" className="project-content-img" />
             <p className="mb-5 text-muted fst-italic text-center">Matplotlib graph showing samples from Option E</p>
 
             <h3 className="mb-3">Conclusion</h3>

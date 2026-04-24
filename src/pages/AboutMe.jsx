@@ -1,12 +1,13 @@
 import React from 'react';
+import { imgUrl } from '../utils/assetUrl';
 
 function AboutMe() {
   return (
     <main style={{ minHeight: '100vh', paddingBottom: '80px' }}>
       <section id="feature" className="gradient-background border-bottom" style={{ paddingTop: '120px', paddingBottom: '3rem' }}>
         <div className="px-4 text-center">
-          <img className="d-block mx-auto mb-4 profile-img shadow" src="/Images/PeipeiSun_small.jpg" alt="profile image" />
-          <a href="/Images/Resume Lipeipei Sun.pdf" target="_blank" rel="noopener noreferrer">
+          <img className="d-block mx-auto mb-4 profile-img shadow" src={imgUrl('/Images/PeipeiSun_small.jpg')} alt="profile image" />
+          <a href={imgUrl('/Images/Resume Lipeipei Sun.pdf')} target="_blank" rel="noopener noreferrer">
             <button type="button" className="btn btn-outline-dark btn-modern my-3 fs-5">View Resume</button>
           </a>
         </div>

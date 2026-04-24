@@ -22,6 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Exclude large, unnecessary files (like images that may cause Mmap error)
-public/Images/

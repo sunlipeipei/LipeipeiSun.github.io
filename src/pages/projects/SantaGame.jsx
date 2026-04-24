@@ -1,4 +1,5 @@
 import React from 'react';
+import { imgUrl } from '../../utils/assetUrl';
 
 export default function SantaGame() {
   return (
@@ -13,13 +14,13 @@ export default function SantaGame() {
           </div>
 
           <img
-            src="/Images/01_Santa Game/Game_logo.png"
+            src={imgUrl('/Images/01_Santa Game/Game_logo.png')}
             className="d-block mx-auto mb-3"
             alt="Santa Game logo"
             style={{ width: '120px' }}
           />
           <img
-            src="/Images/01_Santa_Game.gif"
+            src={imgUrl('/Images/01_Santa_Game.gif')}
             className="img-fluid d-block mx-auto mb-4"
             alt="Santa Game gameplay"
             style={{ maxWidth: '600px', borderRadius: '16px' }}

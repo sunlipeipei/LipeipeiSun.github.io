@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import { imgUrl } from '../utils/assetUrl';
 
 function Home() {
   return (
@@ -7,7 +8,7 @@ function Home() {
       <section id="feature" className="py-5">
         <div className="container px-4 text-center">
           <h1 className="display-4 fw-bold text-dark mb-4" style={{ letterSpacing: '-1px' }}>Hello & welcome!</h1>
-          <img className="d-block mx-auto mb-5 profile-img mt-3" src="/Images/PeipeiSun_small.jpg" alt="Lipeipei Sun profile" />
+          <img className="d-block mx-auto mb-5 profile-img mt-3" src={imgUrl('/Images/PeipeiSun_small.jpg')} alt="Lipeipei Sun profile" />
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4 fs-4 text-muted" style={{ fontWeight: 300 }}>
               I'm <span className="fw-medium text-dark">Lipeipei Sun</span>, a current master's student in Computer Science at Northeastern University, embarking on an exciting journey that bridges the creative world of architecture with the innovative realm of technology.

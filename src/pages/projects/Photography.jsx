@@ -1,10 +1,11 @@
 import React from 'react';
+import { imgUrl } from '../../utils/assetUrl';
 
 const photos = [
-  { src: '/Images/08_Photo.jpeg', alt: 'Photography' },
-  { src: '/Images/08.jpeg', alt: 'Photography' },
-  { src: '/Images/08_Photography/14_MillerHull_PikePlaceMarketFront_PS_300dpi.jpg', alt: 'Miller Hull Pike Place Market Front' },
-  { src: '/Images/08_Photography/16_MillerHull_PikePlaceMarketFront_PS_300dpi_(1).jpg', alt: 'Miller Hull Pike Place Market Front 2' },
+  '/Images/08_Photo.jpeg',
+  '/Images/08.jpeg',
+  '/Images/08_Photography/14_MillerHull_PikePlaceMarketFront_PS_300dpi.jpg',
+  '/Images/08_Photography/16_MillerHull_PikePlaceMarketFront_PS_300dpi_(1).jpg',
 ];
 
 export default function Photography() {
@@ -20,8 +21,8 @@ export default function Photography() {
           </div>
 
           <div className="photo-grid">
-            {photos.map((photo, i) => (
-              <img key={i} src={photo.src} alt={photo.alt} />
+            {photos.map((path, i) => (
+              <img key={i} src={imgUrl(path)} alt={`Photography ${i + 1}`} />
             ))}
           </div>
         </div>
