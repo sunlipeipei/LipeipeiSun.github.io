@@ -6,6 +6,15 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Code from './pages/Code';
 import Design from './pages/Design';
+import DeepWork from './pages/projects/DeepWork';
+import LlmPersona from './pages/projects/LlmPersona';
+import SantaGame from './pages/projects/SantaGame';
+import PanelLayout from './pages/projects/PanelLayout';
+import UwHseb from './pages/projects/UwHseb';
+import LivingUponHistory from './pages/projects/LivingUponHistory';
+import NeverGoneNeverHome from './pages/projects/NeverGoneNeverHome';
+import UofADistrict from './pages/projects/UofADistrict';
+import Photography from './pages/projects/Photography';
 
 function App() {
   return (
@@ -18,7 +27,15 @@ function App() {
             <Route path="/about" element={<AboutMe />} />
             <Route path="/code" element={<Code />} />
             <Route path="/design" element={<Design />} />
-            {/* Fallback route for all individual project pages to open existing HTML if needed, or simply render Home. We can expand this later. */}
+            <Route path="/projects/deepwork" element={<DeepWork />} />
+            <Route path="/projects/llm-persona" element={<LlmPersona />} />
+            <Route path="/projects/santa-game" element={<SantaGame />} />
+            <Route path="/projects/panel-layout" element={<PanelLayout />} />
+            <Route path="/projects/uw-hseb" element={<UwHseb />} />
+            <Route path="/projects/living-upon-history" element={<LivingUponHistory />} />
+            <Route path="/projects/never-gone-never-home" element={<NeverGoneNeverHome />} />
+            <Route path="/projects/uofa-district" element={<UofADistrict />} />
+            <Route path="/projects/photography" element={<Photography />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>

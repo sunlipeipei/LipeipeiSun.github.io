@@ -3,7 +3,7 @@ import { Github, Linkedin } from 'lucide-react';
 
 function Footer() {
   return (
-    <footer className="footer mt-auto py-4 bg-transparent border-top mt-5">
+    <footer className="footer mt-auto py-2 bg-transparent border-top mt-5">
       <div className="container d-flex flex-wrap justify-content-between align-items-center">
         <div className="col-md-4 d-flex align-items-center">
           <span className="text-secondary fw-medium">© {new Date().getFullYear()} Lipeipei Sun. All rights reserved.</span>

@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   background-color: #f8f9fa; /* Fallback */
   color: #2b2b2b;
 }
@@ -127,6 +127,50 @@ body {
 
 /* Fix margin */
 .featurette-divider {
-  margin: 2rem 0; 
+  margin: 2rem 0;
   border-color: rgba(0,0,0,0.1);
+}
+
+/* Project page carousels */
+.project-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-carousel .carousel-item img {
+  max-height: 70vh;
+  width: 100%;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Project page inline content images */
+.project-content-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Photography gallery grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }

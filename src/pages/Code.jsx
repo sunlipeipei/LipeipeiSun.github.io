@@ -12,15 +12,15 @@ function Code() {
             category="Full-Stack Development & AI Engineering"
             description="DeepWork is a full-stack Pomodoro focus timer built with Next.js 16, MongoDB, and Tailwind CSS. It focuses on non-coercive transitions and a structured engineering pipeline using TDD."
             imageUrl="/Images/12_DeepWork.png"
-            primaryLink="/12_page_DeepWork.html"
+            primaryLink="/projects/deepwork"
           />
 
-          <ProjectCard 
+          <ProjectCard
             title="Building Interactive LLM-persona"
             category="Research Apprenticeship"
             description="This research project focuses on the application of large language models (LLMs) to building interactive Persona."
             imageUrl="/Images/10_InteractivePersona.webp"
-            primaryLink="/10_page_research_LLMPersona.html"
+            primaryLink="/projects/llm-persona"
             reverse={true}
           />
 
@@ -39,7 +39,7 @@ function Code() {
             category="A fun festival game"
             description="A simple game created with Python and pyglet for the holiday season."
             imageUrl="/Images/01_Santa_Game.gif"
-            primaryLink="/02_page_santa_game.html"
+            primaryLink="/projects/santa-game"
             reverse={true}
           />
 
@@ -48,7 +48,7 @@ function Code() {
             category="Layouts and optimization"
             description="The objective of this project is to analyze and optimize the layout of wall panels and windows on a building facade, incorporating both performance requirements and aesthetic preferences. The project employed discrete mathematics, with a focus on combinatorics and probability, to systematically explore layout options."
             imageUrl="/Images/02_Pattern Studies feature image.png"
-            primaryLink="/03_page_panel_layout.html"
+            primaryLink="/projects/panel-layout"
           />
 
         </div>

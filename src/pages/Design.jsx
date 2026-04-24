@@ -12,7 +12,7 @@ function Design() {
             category="Architecture"
             description="The Health Sciences Education Building provides learning spaces to foster interaction, collaboration, and creativity. I have focused on designing and developing technical documents for building exterior envelopes as well as flexible, open learning spaces."
             imageUrl="/Images/03_UW HSEB.jpg"
-            primaryLink="/04_page_uw_hseb.html"
+            primaryLink="/projects/uw-hseb"
           />
 
           <ProjectCard 
@@ -20,7 +20,7 @@ function Design() {
             category="Architecture"
             description="Through modernizing three existing buildings, and constructing an entirely new one, this project transforms this cluster of buildings into a unified and cohesive District that provides a centralized point of support for the entire student body."
             imageUrl="/Images/07_UofA.jpeg"
-            primaryLink="/07_page_uofa_libraries.html"
+            primaryLink="/projects/uofa-district"
             reverse={true}
           />
 
@@ -29,7 +29,7 @@ function Design() {
             category="Creative storytelling"
             description="Our lives are built upon the accumulated history of places we’ve lived in. Each layer of time tells a story, and informs the future."
             imageUrl="/Images/04_LUH.jpeg"
-            primaryLink="/05_page_luh.html"
+            primaryLink="/projects/living-upon-history"
           />
 
           <ProjectCard 
@@ -37,15 +37,16 @@ function Design() {
             category="Creative storytelling"
             description="This project explores the juxtaposition of two distinct worlds: the futuristic, uniform Cube City suspended above Earth to escape relentless earthquakes, and a vibrant, close-knit community on Earth's surface, emphasizing themes of memory, identity, and the human connection to place."
             imageUrl="/Images/05_Never Gone Never Home.jpg"
-            primaryLink="/06_page_fairy_tale.html"
+            primaryLink="/projects/never-gone-never-home"
             reverse={true}
           />
 
-          <ProjectCard 
+          <ProjectCard
             title="recording through the lens"
             category="Photography"
             description="Explore the art of capturing everything from the intricate details of architecture to the boundless beauty of landscapes through my lens. Each image invites you on a visual journey, showcasing the remarkable diversity of our world and evoking a deeper appreciation for the spaces we inhabit."
             imageUrl="/Images/08_Photo.jpeg"
+            primaryLink="/projects/photography"
           />
 
           <ProjectCard 
